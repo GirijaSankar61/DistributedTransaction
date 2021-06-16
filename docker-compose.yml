@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  mongodb:
+    image: mongo
+    ports:
+    - 27017:27017
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+    - 3306:3306
